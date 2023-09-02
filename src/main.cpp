@@ -14,7 +14,7 @@ SDL_Window* window = nullptr;
 SDL_Renderer* renderer = nullptr;
 Color currentColor;
 
-const std::string modelPath = "../models/Lab_3_Pablo_Zamora.obj";
+const std::string modelPath = "../models/model.obj";
 Color clearColor(0, 0, 0);  // Color del fondo
 float rotationAngle = glm::radians(0.0f);
 
@@ -170,7 +170,7 @@ int main(int argv, char** args)
 
     // Inicializar cámara
     Camera camera;
-    camera.cameraPosition = glm::vec3(0.0f, 0.0f, 50.0f);
+    camera.cameraPosition = glm::vec3(0.0f, 0.0f, 5.0f);
     camera.targetPosition = glm::vec3(0.0f, 0.0f, 0.0f);
     camera.upVector = glm::vec3(0.0f, 1.0f, 0.0f);
 
